@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Contraseña</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/recPasEstilos.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/site.webmanifest">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <script src="https://kit.fontawesome.com/3e45f27e30.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <header class="">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="img/cuenta.PNG" alt="" class="cuenta">
+                </div>
+                
+                <div class="prev">
+                    <p><button type="button" id="botonPrev"><i class="fas fa-arrow-left"></i></button><span id="spanPassword">Contraseña</span></p>
+                </div>
+
+                <nav class="">
+                    <button class=""><i class="far fa-question-circle"></i></button>
+                    <button class=""><i class="fas fa-th"></i></button>
+                    <button class="account"><span>c</span></button>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contenido wrapper">
+            <div class="parrafo">
+                <p class="text">
+                    Elige una contraseña segura y no la utilices en otras cuentas. <a href="https://support.google.com/accounts/answer/32040?visit_id=637582845630625491-431755458&p=pw_dont_reuse&hl=es&rd=1" class="masInfo" target="_blank">Más información</a> </br> </br> 
+                    Si cambias tu contraseña, se cerrará sesión en todos tus dispositivos, con algunas <a href="https://myaccount.google.com/" class="execption" target="_blank">excepciones.</a> </br> </br> 
+                    <span>¿Has perdido un dispositivo o te lo han robado?</span> Siempre puedes cerrar sesión de forma remota desde <a href="" class="" target="_blank">Tus dispositivos.</a>
+                </p>
+            </div>
+            <div id="bodyLogin">
+                       <form action="https://accounts.google.com/AccountChooser/identifier?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" class="formulario" id="form"> 
+                            <div id="form-password" >
+                                
+                                <div id="input-pass">
+                                    <i id="view" class="far fa-eye-slash"></i>
+                                    <label id ="label">
+                                        <span id="span">Contraseña nueva</span>
+                                        <input type="password" id="emailPass" required="" name="password">
+                                    </label>
+                                </div>
+                                <div id="msjError1" class="mjsErr1">
+                                    <p class="error1" id="err1">Elige una contraseña más larga.</p>
+                                </div>
+                                
+                                <div class="securidad">
+                                        <p class="security">
+                                            <span>Seguridad de la contraseña:</span> </br>
+                                            Utiliza al menos 8 caracteres. No uses una contraseña de otro sitio ni un nombre demasiado obvio, como el de tu mascota. <a href="https://support.google.com/accounts/answer/32040?visit_id=637585316310209888-2478102281&p=pw_signup&hl=es&rd=1" class="execption" target="_blank">¿Por qué?</a>
+                                        </p>
+                                </div>
+
+
+                                <div id="input-pass2">
+                                    <i id="view2" class="far fa-eye-slash"></i>
+                                    <label id="label">
+                                        <span id="span">Confirma la nueva contraseña </span>
+                                        <input type="password" id="emailPass2" required="" name="password2">
+                                    </label>
+                                </div>
+                                <div id="msjError2" class="mjsErr2">
+                                    <p class="error2" id="err2">Las contraseñas no coinciden.</p>
+                                </div>
+
+                                <div class="divButton2">
+                                    <input type="submit" id="btnNextPass" onclick = "return enviarFormulario();" class="btnFormLogin" value="Cambiar la contraseña">
+                                </div>
+
+                            </div>
+                            
+
+
+                         </form>
+
+            </div>
+        </section>
+
+<footer>
+    <div class="footer">
+        <a href="https://policies.google.com/privacy" class="priv" target="_blank">Privacidad</a> 
+        <a href="https://policies.google.com/terms" class="ter" target="_blank">Términos</a>
+        <a href="https://myaccount.google.com/support" class="ayu" target="_blank">Ayuda</a>
+        <a href="https://www.google.com/account/about/" class="acer" target="_blank">Acerca de</a>
+    </div>
+</footer>
+    
+        
+        <script src="js/funcionRec.js"></script>
+    </body>
+</html>

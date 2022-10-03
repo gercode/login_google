@@ -1,0 +1,561 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#continerLogin{
+    width:100%;
+    height:100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display:-ms-flex;
+    display: -o-flex;
+    display:flex;
+    justify-content: center;
+    background: #fff;
+    position: relative;
+    box-sizing: inherit;
+    padding: 59px 40px 36px;
+
+}
+
+#bodyLogin{
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    padding: 48px 40px 36px;
+    overflow:hidden;
+    overflow-y: auto;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px 8px 0 0;
+    min-height: 500px;
+    position:relative;
+
+}
+
+.divLogo{
+    padding: 0px 142px;
+    position:absolute;
+    bottom:444px;
+}
+
+#continerLayount {
+    position:relative;
+}
+#continerLayount > div{
+   position:absolute;
+   top:0;
+   left:0;
+   padding:0 44px;
+   width:100%
+}
+
+#mensaje{
+    position:absolute;
+    top:110px;
+    right:20px;
+    width:300px;
+}
+.aviso{
+    font-family: 'Roboto', 'RobotoDraft', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color:#202124;
+    font-style: normal;
+}
+
+/*estilos form-password*/
+#form-password{
+    position:relative;
+}
+
+
+
+.select-box{
+    margin:auto;
+    position:relative;
+    height: 30px;
+    margin-top: 40px;
+}
+.select{
+    background:#fff;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width:100%;
+    cursor:pointer;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: .2s ease all;
+    z-index: 200;
+    height: 30px;
+    position:relative;
+}
+.select.active,
+.select:hover{
+    background:#F7F8F8;
+    border: 1px solid #ccc;
+}
+.select .fa-angle-down{
+    color:#5E6265;
+    margin-right: 12px;
+}
+.select .contenido-select .fa-user-circle {
+    margin-left: 12px;
+    color:#5E6265;
+    margin-right: 20px;
+}
+.select .contenido-select{
+    display:flex;
+    align-items: center;
+}
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#3c4043;
+    font-weight: 500;
+    line-height: 20px;
+    font-style: normal;
+}
+.opciones{
+    background:#fff;
+    border-radius:5px;
+    height: 60px;
+    overflow:auto;
+    z-index: 100;
+    width: 100%;
+    display:none;
+}
+.opciones.active{
+    display:block;
+}
+.opciones a{
+    text-decoration: none;
+}
+
+
+.contenido-opcion{
+    width:100%;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    transition:.2s ease all;
+    padding:10px; /***********/
+}
+
+.contenido-opcion .icon{
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background:#78909C;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.contenido-opcion .icon h3{
+    color:#DAE1E4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding:2px 8.5px;
+    font-weight: 400;
+}
+.contenido-opcion i{
+    color: #5f6368;
+    margin-right: 15px;
+}
+
+
+
+.contenido-opcion:hover{
+    background:#E8F0FE;
+}
+.contenido-opcion div h2{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color:#5f6368;
+    text-decoration: none;
+}
+
+
+#input-pass{
+    position:absolute;
+    top:169px;
+}
+#chekbox-Password{
+    position:absolute;
+    top:250px;
+    left: -42px;
+}
+#chekbox-Password span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color:#5e5e5e;
+}
+
+
+.divButton2{
+    width: 370px;
+    margin-top: 293px;
+    position:absolute;
+    left:-42px;
+}
+.divButton2 a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color:#1a73e8;
+    font-weight: 500;
+    transform:translateX();
+}
+.divButton2 input{
+    background:#1A73E8;
+    border:none;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    width:110px;
+    height: 35px;
+    border-radius: 4px;
+    transform:translateX(55%);
+}
+.divButton2 input:hover{
+    background:#1B66CA;
+}
+
+/*password*/
+
+/*Reposo*/
+
+span, input [type="password"]{
+    font-family: 'Roboto', 'RobotoDraft', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding:0;
+}
+
+#form-password label{
+    display:block;
+    width: 368px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px 8px;
+    position:relative;
+    box-sizing: border-box;
+    right:44px;
+    bottom: 10px;
+}
+
+#form-password label input[type="password"]{
+    display:block;
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    color:black;
+    padding: 5px;
+    
+}
+#form-password label span{
+    color:rgb(124, 119, 119);
+    position:absolute;
+    padding: 0.5px 7px;
+    font-weight: bolder;
+    letter-spacing: 0.18px;
+    
+
+}
+
+
+/*focus*/
+#form-password label.focus{
+    border: 2px solid #1A73E8;
+}
+
+#form-password label span.focus{
+    color:#3C88EB;
+}
+
+
+/*top*/
+#form-password label span.top{
+    left: 2px;
+    top: -15px;
+    font-size: 12px;
+    background:#fff;
+}
+
+#form-password{
+    display:block;
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    color:black;
+    padding: 5px;
+    
+}
+
+#form-password label input.cambio{
+    display:block;
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    padding: 5px;
+    font-family: 'Roboto', 'RobotoDraft', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202124;
+    
+}
+.alert{
+    position:relative;
+}
+.alert p{
+    font-family:'roboto', "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color:#d93025;
+    position:absolute;
+    top:150px;
+    left:-42px;
+}
+#alertEmailLogin{
+    display: none;
+}
+
+.alert p i{
+    color:#d93025;
+    padding-right: 5px;
+}
+
+/*focus 2*/
+#form-password label.focus2{
+    border: 2px solid #d93025;
+}
+
+#form-password label span.focus2{
+    color:#d93025;
+}
+
+.foot__check{
+    position:absolute;
+    left: 455px;
+    
+    bottom: 10px;
+}
+.foot__check select{
+    border:none;
+    font-family: 'roboto', "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color:#202124;
+}
+
+.foot__check a{
+    font-family: 'roboto', "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color:#202124;
+    text-decoration: none;
+    cursor:pointer;
+    padding-right: 35px;
+}
+.foot__check .Ayuda{
+    padding-left: 10px;
+    
+}
+
+/*MediaQueries*/
+
+
+@media screen and (max-width:375px){
+    .divLogo{
+        left:6%;
+        position:absolute;
+        bottom:90%;
+        min-width: 20px;
+    }
+    .select-box{
+            margin:auto;
+            position:relative;
+            height: 30px;
+            margin-top: 40px;
+            width:80%;
+    }
+
+    .select{
+        width: 210px;
+        right:50px;
+    }
+    .select .contenido-select .fa-user-circle {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .opciones{
+        width: 210px;
+        
+    }
+    .mensaje{
+       
+       margin-right:-40px;
+    }
+    .aviso{
+        font-size: 12px;
+    }
+    #form-password label{
+        width: 230px;
+    }
+    #input-pass{
+        transform:translateX(-20px);
+    }
+    .alert{
+        width:200px;
+        transform:translateX(-20px);
+    }
+
+    #chekbox-Password{
+       width:200px;
+       transform:translateX(-15px);
+    }
+    .divButton2{
+        width: 200px;
+        position:absolute;
+        left:-42px;
+    }
+    .foot__check{
+        transform:translateX(-400px);
+        z-index: 200;
+        width: 300px;
+        bottom:90px;
+    }
+    #bodyLogin{
+        height: 600px;
+    }
+    .foot__check a{
+        padding-right: 25px;
+    }
+    
+}
+@media screen and (max-width:414px){
+    .divLogo{
+        transform:translateX(-50px);
+        position:absolute;
+        bottom:90%;
+        }
+
+        .select-box{
+            margin:auto;
+            position:relative;
+            height: 30px;
+            margin-top: 40px;
+            width:80%;
+    }
+
+    .select{
+        width: 210px;
+        right:50px;
+    }
+    .select .contenido-select .fa-user-circle {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .opciones{
+        width: 210px;
+        
+    }
+    .mensaje{
+       
+       transform:translateX(95px);
+    }
+    .aviso{
+        font-size: 12px;
+    }
+    #form-password label{
+        width: 300px;
+    }
+    #input-pass{
+        transform:translateX(-20px);
+    }
+    .alert{
+        width:200px;
+        transform:translateX(-20px);
+    }
+
+    #chekbox-Password{
+       width:200px;
+       transform:translateX(-15px);
+    }
+    .divButton2{
+        width: 200px;
+        position:absolute;
+        left:-42px;
+    }
+    .foot__check{
+        transform:translateX(-400px);
+        z-index: 200;
+        width: 300px;
+        bottom:20px;
+    }
+    #bodyLogin{
+        height: 600px;
+    }
+    .foot__check a{
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+	.divLogo{
+        bottom:770px;
+        }
+    #bodyLogin{
+        height: 850px;
+    }
+    .foot__check{
+        transform:translateX(-300px);
+        z-index: 200;
+        width: 400px;
+        bottom:60px;
+    }
+    .foot__check a{
+        padding-right: 20px;
+    }
+
+	}
+
+    @media (min-width: 1000px) and (max-width: 1030px){
+        .divLogo{
+            bottom:785px;
+            }
+        #bodyLogin{
+            height: 850px;
+        }
+        .foot__check{
+            transform:translateX(-300px);
+            z-index: 200;
+            width: 400px;
+            bottom:10px;
+            }
+            .foot__check a{
+                padding-right: 20px;
+            }
+        }           
+
+
+
+
+
+
+
